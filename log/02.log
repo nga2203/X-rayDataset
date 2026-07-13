@@ -1,0 +1,22 @@
+===========================================================================
+>>> GIAI ĐOẠN 2: KIỂM ĐỊNH NHÃN BẰNG LLM (BATCH AUDIT)
+===========================================================================
+[THÔNG BÁO] Chạy kiểm định trên toàn bộ 3523 ca...
+[LLM BACKEND] Đã kết nối Ollama Server (Model: qwen2.5:7b-instruct)
+LLM Auditing: 100%|█████████████████████████████████████████████████████| 3523/3523 [3:52:33<00:00,  3.96s/it] 
+-> Đã lưu kết quả LLM Audit tại: d:\Project\X-rayDataset\Data\audited_pipeline_test.csv (3523 ca)
+
+================================================================================
+BÁO CÁO KIỂM ĐỊNH NHÃN TỰ ĐỘNG CŨ SO VỚI NHÃN CHUẨN (COHEN'S KAPPA)
+================================================================================
+          Nhãn Bệnh lý  Cohen's Kappa  Precision (Nhãn cũ)  Recall (Nhãn cũ)  F1-Score  Xu hướng Nhãn cũ       
+          CARDIOMEGALY          0.994                1.000             0.988     0.994         Chuẩn xác       
+          DEGENERATION          0.580                0.989             0.459     0.627   Bỏ sót (FN cao)       
+              FRACTURE          0.927                0.973             0.903     0.937         Chuẩn xác       
+                NORMAL          0.817                0.987             0.867     0.923         Chuẩn xác       
+                 OTHER          0.077                0.049             0.800     0.092 Gán thừa (FP cao)       
+      PLEURAL_EFFUSION          0.527                0.464             0.619     0.531     Nhiễu hỗn hợp       
+PNEUMONIA/INFILTRATION          0.730                0.634             0.885     0.739     Nhiễu hỗn hợp       
+      SPINAL_ALIGNMENT          0.793                0.673             0.971     0.795         Chuẩn xác       
+          TUBERCULOSIS          0.081                0.045             1.000     0.085 Gán thừa (FP cao)       
+================================================================================

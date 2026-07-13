@@ -1,0 +1,7 @@
+architecture:
+  image_encoder: "swin_tiny_patch4_window7_224" # previously "swin_base_patch4_window7_224"
+  text_encoder: "vinai/phobert-base-v2"
+  fusion_dim: 768
+  dropout: 0.2
+  num_layers_fusion: 2
+  num_classes: 9

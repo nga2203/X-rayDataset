@@ -1,0 +1,23 @@
+project_name: "NGA"
+version: "1.0.0"
+
+data:
+  train_csv: "Data/dataset_train.csv"
+  val_csv: "Data/dataset_val.csv"
+  test_csv: "Data/dataset_test.csv"
+  class_mapping: "data/class_mapping_lab03.json"
+  img_size: 224
+  max_images: 5
+  max_text_len: 128
+
+training:
+  batch_size: 8
+  accumulation_steps: 2
+  epochs: 20
+  learning_rate: 0.0001
+  num_workers: 4
+  seed: 42
+  save_dir: "C:/Project/NGA/checkpoints/"
+  log_dir: "logs/"
+  patience: 3 # Early stopping
+  gen_loss_weight: 0.2
