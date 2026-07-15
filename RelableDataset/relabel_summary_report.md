@@ -8,15 +8,30 @@
 
 | Nhãn Bệnh lý           |   Train Cũ |   Train Sạch (LLM) |   Train Chênh lệch |   Val Cũ |   Val Sạch (LLM) |   Val Chênh lệch |
 |:-----------------------|-----------:|-------------------:|-------------------:|---------:|-----------------:|-----------------:|
-| CARDIOMEGALY           |        539 |                539 |                  0 |       75 |               76 |                1 |
-| DEGENERATION           |        977 |               1385 |                408 |      138 |              199 |               61 |
-| FRACTURE               |       1560 |               1425 |               -135 |      217 |              196 |              -21 |
-| NORMAL                 |       6677 |               4552 |              -2125 |      952 |              624 |             -328 |
-| OTHER                  |       1735 |               4349 |               2614 |      244 |              646 |              402 |
-| PLEURAL_EFFUSION       |        101 |                 75 |                -26 |       15 |                9 |               -6 |
-| PNEUMONIA/INFILTRATION |        521 |                133 |               -388 |       71 |                9 |              -62 |
-| SPINAL_ALIGNMENT       |        177 |                140 |                -37 |       27 |               21 |               -6 |
-| TUBERCULOSIS           |        756 |                 20 |               -736 |       98 |                6 |              -92 |
+| CARDIOMEGALY           |        539 |                548 |                  9 |       75 |               77 |                2 |
+| DEGENERATION           |        977 |               2123 |               1146 |      138 |              304 |              166 |
+| FRACTURE               |       1560 |               1658 |                 98 |      217 |              230 |               13 |
+| NORMAL                 |       6677 |               7526 |                849 |      952 |             1054 |              102 |
+| OTHER                  |       1735 |                198 |              -1537 |      244 |               35 |             -209 |
+| PLEURAL_EFFUSION       |        101 |                 67 |                -34 |       15 |                7 |               -8 |
+| PNEUMONIA/INFILTRATION |        521 |                377 |               -144 |       71 |               49 |              -22 |
+| SPINAL_ALIGNMENT       |        177 |                128 |                -49 |       27 |               20 |               -7 |
+| TUBERCULOSIS           |        756 |                 17 |               -739 |       98 |                4 |              -94 |
 
 ---
 *Dữ liệu sạch sẵn sàng để huấn luyện lại mô hình VN-MultiXR v2.*
+
+================================================================================
+BẢNG ĐỐI CHIẾU SỐ LƯỢNG CA TRƯỚC VÀ SAU KHI LÀM SẠCH NHÃN (TRAIN & VAL)
+================================================================================
+          Nhãn Bệnh lý  Train Cũ  Train Sạch (LLM)  Train Chênh lệch  Val Cũ  Val Sạch (LLM)  Val Chênh lệch
+          CARDIOMEGALY       539               548                 9      75              77               2
+          DEGENERATION       977              2123              1146     138             304             166
+              FRACTURE      1560              1658                98     217             230              13
+                NORMAL      6677              7526               849     952            1054             102
+                 OTHER      1735               198             -1537     244              35            -209
+      PLEURAL_EFFUSION       101                67               -34      15               7              -8
+PNEUMONIA/INFILTRATION       521               377              -144      71              49             -22
+      SPINAL_ALIGNMENT       177               128               -49      27              20              -7
+          TUBERCULOSIS       756                17              -739      98               4             -94
+================================================================================
