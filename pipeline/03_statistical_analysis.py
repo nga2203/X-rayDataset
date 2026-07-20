@@ -27,8 +27,8 @@ from pipeline.config_pipeline import (
 )
 
 AUDIT_INPUT_CSV = os.path.join(DATA_DIR, "audited_pipeline_test.csv")
-CRAMERS_V_OUTPUT_CSV = os.path.join(DATA_DIR, "cramers_v_matrix.csv")
-AGE_SUBGROUP_OUTPUT_CSV = os.path.join(DATA_DIR, "age_subgroup_f1_recall.csv")
+CRAMERS_V_OUTPUT_CSV = os.path.join(DATA_DIR, "cramers_v_matrix_8.csv")
+AGE_SUBGROUP_OUTPUT_CSV = os.path.join(DATA_DIR, "age_subgroup_f1_recall_8.csv")
 
 
 def compute_cramers_v(x, y):
@@ -59,7 +59,7 @@ def run_statistical_analysis(input_csv=AUDIT_INPUT_CSV):
     # -------------------------------------------------------------------------
     # LUỒNG 2: MA TRẬN ĐỒNG XUẤT HIỆN & CRAMÉR'S V
     # -------------------------------------------------------------------------
-    print("\n[1/2] Tính toán Ma trận Đồng xuất hiện & Cramér's V giữa 9 bệnh...")
+    print("\n[1/2] Tính toán Ma trận Đồng xuất hiện & Cramér's V giữa 8 bệnh...")
     cramer_matrix = pd.DataFrame(1.0, index=LABELS_9, columns=LABELS_9)
     pval_matrix = pd.DataFrame(0.0, index=LABELS_9, columns=LABELS_9)
     pairs = []

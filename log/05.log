@@ -1,0 +1,62 @@
+================================================================================
+>>> TẠO BỘ DỮ LIỆU ĐỒNG THUẬN (CONSENSUS DATASET: OLD LABELS == LLM LABELS)
+================================================================================
+
+[TRAIN] Đang đọc file nguồn: d:\Project\X-rayDataset\RelableDataset\clean_train.csv ...
+  -> Tổng số ca ban đầu: 12,462
+  -> Số ca đồng thuận (Trùng khớp 100% Nhãn Cũ & Nhãn LLM): 9,511 (76.32%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\RelableDataset\consensus_train.csv
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data\consensus_train.csv
+
+[VAL] Đang đọc file nguồn: d:\Project\X-rayDataset\RelableDataset\clean_val.csv ...
+  -> Tổng số ca ban đầu: 1,770
+  -> Số ca đồng thuận (Trùng khớp 100% Nhãn Cũ & Nhãn LLM): 1,364 (77.06%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\RelableDataset\consensus_val.csv
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data\consensus_val.csv
+
+[TEST] Đang đọc file nguồn: d:\Project\X-rayDataset\RelableDataset\clean_test_formatted.csv ...
+  -> Tổng số ca ban đầu: 3,523
+  -> Số ca đồng thuận (Trùng khớp 100% Nhãn Cũ & Nhãn LLM): 2,723 (77.29%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\RelableDataset\consensus_test.csv
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data\consensus_test.csv
+
+================================================================================
+BẢNG TỔNG HỢP BỘ DỮ LIỆU ĐỒNG THUẬN (CONSENSUS DATASET SUMMARY)
+================================================================================
+Tập Dữ Liệu  Số Ca Ban Đầu  Số Ca Đồng Thuận Tỷ Lệ Giữ Lại (%)
+      TRAIN          12462              9511             76.3%
+        VAL           1770              1364             77.1%
+       TEST           3523              2723             77.3%
+
+[PHÂN PHỐI SỐ LƯỢNG CA DƯƠNG TÍNH THEO BỆNH LÝ TRONG BỘ ĐỒNG THUẬN]
+
+--- TRAIN (Tổng 9,511 ca) ---
+  + CARDIOMEGALY             : 349 ca
+  + DEGENERATION             : 917 ca
+  + FRACTURE                 : 1,448 ca
+  + OTHER                    : 80 ca
+  + PLEURAL_EFFUSION         : 28 ca
+  + PNEUMONIA/INFILTRATION   : 138 ca
+  + SPINAL_ALIGNMENT         : 32 ca
+  + TUBERCULOSIS             : 9 ca
+
+--- VAL (Tổng 1,364 ca) ---
+  + CARDIOMEGALY             : 47 ca
+  + DEGENERATION             : 133 ca
+  + FRACTURE                 : 201 ca
+  + OTHER                    : 16 ca
+  + PLEURAL_EFFUSION         : 2 ca
+  + PNEUMONIA/INFILTRATION   : 27 ca
+  + SPINAL_ALIGNMENT         : 4 ca
+  + TUBERCULOSIS             : 3 ca
+
+--- TEST (Tổng 2,723 ca) ---
+  + CARDIOMEGALY             : 98 ca
+  + DEGENERATION             : 271 ca
+  + FRACTURE                 : 411 ca
+  + OTHER                    : 23 ca
+  + PLEURAL_EFFUSION         : 6 ca
+  + PNEUMONIA/INFILTRATION   : 40 ca
+  + SPINAL_ALIGNMENT         : 15 ca
+  + TUBERCULOSIS             : 3 ca
+================================================================================
