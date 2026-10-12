@@ -1,0 +1,22 @@
+===========================================================================
+>>> GIAI ĐOẠN 2: KIỂM ĐỊNH NHÃN THỊ GIÁC BẰNG VLM (VISION BATCH AUDIT)
+===========================================================================
+[THÔNG BÁO] Chạy kiểm định thị giác trên toàn bộ 3559 ca...
+[VLM BACKEND] Đã kết nối Ollama Server (Model: qwen2.5vl:7b)
+VLM Auditing: 100%|█████████████████████████████████████████████████████| 3559/3559 [2:11:42<00:00,  2.22s/ca]
+-> Đã lưu kết quả VLM Audit tại: d:\Project\X-rayDataset\Data_2\audited_vlm_test.csv (3559 ca)
+
+================================================================================
+BÁO CÁO KIỂM ĐỊNH NHÃN TỰ ĐỘNG CŨ SO VỚI NHÃN CHUẨN VLM (COHEN'S KAPPA)
+================================================================================
+          Nhãn Bệnh lý  Cohen's Kappa  Precision (Nhãn cũ)  Recall (Nhãn cũ)  F1-Score  Xu hướng Nhãn cũ
+          CARDIOMEGALY          0.000                0.000             0.000     0.000     Nhiễu hỗn hợp
+          DEGENERATION          0.415                0.533             0.416     0.468   Bỏ sót (FN cao)
+              FRACTURE          0.010                0.011             0.238     0.022     Nhiễu hỗn hợp
+                NORMAL          0.165                0.940             0.582     0.719     Nhiễu hỗn hợp
+                 OTHER          0.052                0.069             0.252     0.108     Nhiễu hỗn hợp
+      PLEURAL_EFFUSION          0.000                0.000             0.000     0.000     Nhiễu hỗn hợp
+PNEUMONIA/INFILTRATION          0.000                0.000             0.000     0.000     Nhiễu hỗn hợp
+      SPINAL_ALIGNMENT          0.068                0.388             0.051     0.090     Nhiễu hỗn hợp
+          TUBERCULOSIS          0.000                0.000             0.000     0.000     Nhiễu hỗn hợp
+================================================================================

@@ -1,0 +1,67 @@
+================================================================================
+>>> TẠO BỘ DỮ LIỆU ĐỒNG THUẬN RIÊNG: NHÃN GỐC == PLAN 2 (VLM)
+    Thư mục xuất chính : D:\Project\X-rayDataset\Data_2\consensus_vlm_old
+    Thư mục đồng bộ    : D:\Project\X-rayDataset\RelableDataset_2\consensus_vlm_old
+================================================================================
+
+[TEST] Đang lọc mẫu đồng thuận từ: D:\Project\X-rayDataset\Data_2\audited_vlm_test.csv ...
+  -> Tổng số ca ban đầu : 3,559
+  -> Số ca đồng thuận   : 1,825 (51.28%)
+  -> Đã lưu tại         : D:\Project\X-rayDataset\Data_2\consensus_vlm_old\consensus_test.csv
+  -> Đồng bộ tại        : D:\Project\X-rayDataset\RelableDataset_2\consensus_vlm_old\consensus_test.csv
+
+[TRAIN] Đang lọc mẫu đồng thuận từ: D:\Project\X-rayDataset\RelableDataset_2\clean_train_vlm.csv ...
+  -> Tổng số ca ban đầu : 12,462
+  -> Số ca đồng thuận   : 9,630 (77.27%)
+  -> Đã lưu tại         : D:\Project\X-rayDataset\Data_2\consensus_vlm_old\consensus_train.csv
+  -> Đồng bộ tại        : D:\Project\X-rayDataset\RelableDataset_2\consensus_vlm_old\consensus_train.csv
+
+[VAL] Đang lọc mẫu đồng thuận từ: D:\Project\X-rayDataset\RelableDataset_2\clean_val_vlm.csv ...
+  -> Tổng số ca ban đầu : 1,770
+  -> Số ca đồng thuận   : 954 (53.90%)
+  -> Đã lưu tại         : D:\Project\X-rayDataset\Data_2\consensus_vlm_old\consensus_val.csv
+  -> Đồng bộ tại        : D:\Project\X-rayDataset\RelableDataset_2\consensus_vlm_old\consensus_val.csv
+
+================================================================================
+BẢNG TỔNG HỢP BỘ DỮ LIỆU ĐỒNG THUẬN (OLD LABELS == VLM LABELS)
+================================================================================
+Tập Dữ Liệu  Số Ca Ban Đầu  Số Ca Đồng Thuận Tỷ Lệ Giữ Lại (%)                File
+       TEST           3559              1825             51.3%  consensus_test.csv
+      TRAIN          12462              9630             77.3% consensus_train.csv
+        VAL           1770               954             53.9%   consensus_val.csv
+
+[PHÂN PHỐI SỐ LƯỢNG CA THEO BỆNH LÝ TRONG BỘ ĐỒNG THUẬN (GỐC == VLM)]
+
+--- TRAIN (Tổng 9,630 ca) ---
+  + CARDIOMEGALY             : 349 ca
+  + DEGENERATION             : 927 ca
+  + FRACTURE                 : 1,448 ca
+  + NORMAL                   : 6,661 ca
+  + OTHER                    : 129 ca
+  + PLEURAL_EFFUSION         : 28 ca
+  + PNEUMONIA/INFILTRATION   : 138 ca
+  + SPINAL_ALIGNMENT         : 42 ca
+  + TUBERCULOSIS             : 9 ca
+
+--- VAL (Tổng 954 ca) ---
+  + CARDIOMEGALY             : 0 ca
+  + DEGENERATION             : 1 ca
+  + FRACTURE                 : 0 ca
+  + NORMAL                   : 947 ca
+  + OTHER                    : 6 ca
+  + PLEURAL_EFFUSION         : 0 ca
+  + PNEUMONIA/INFILTRATION   : 0 ca
+  + SPINAL_ALIGNMENT         : 1 ca
+  + TUBERCULOSIS             : 0 ca
+
+--- TEST (Tổng 1,825 ca) ---
+  + CARDIOMEGALY             : 0 ca
+  + DEGENERATION             : 6 ca
+  + FRACTURE                 : 3 ca
+  + NORMAL                   : 1,799 ca
+  + OTHER                    : 17 ca
+  + PLEURAL_EFFUSION         : 0 ca
+  + PNEUMONIA/INFILTRATION   : 0 ca
+  + SPINAL_ALIGNMENT         : 6 ca
+  + TUBERCULOSIS             : 0 ca
+================================================================================

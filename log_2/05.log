@@ -1,0 +1,59 @@
+================================================================================
+>>> TẠO BỘ DỮ LIỆU ĐỒNG THUẬN ĐA TẦNG (MULTIMODAL CONSENSUS DATASET: VLM == BÁC SĨ == NHÃN CŨ)
+================================================================================
+
+[TRAIN] Đang đọc file nguồn: d:\Project\X-rayDataset\RelableDataset_2\clean_train_vlm.csv ...
+  -> Tổng số ca ban đầu : 12,462
+  -> Số ca đồng thuận (Trùng khớp 100% VLM, Bác sĩ & Nhãn Cũ): 9,630 (77.27%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data_2\consensus_train_vlm.csv
+
+[VAL] Đang đọc file nguồn: d:\Project\X-rayDataset\RelableDataset_2\clean_val_vlm.csv ...
+  -> Tổng số ca ban đầu : 1,770
+  -> Số ca đồng thuận (Trùng khớp 100% VLM, Bác sĩ & Nhãn Cũ): 954 (53.90%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data_2\consensus_val_vlm.csv
+
+[TEST] Đang đọc file nguồn: d:\Project\X-rayDataset\Data_2\audited_vlm_test.csv ...
+  -> Tổng số ca ban đầu : 3,559
+  -> Số ca đồng thuận (Trùng khớp 100% VLM, Bác sĩ & Nhãn Cũ): 1,788 (50.24%)
+  -> Đã lưu file đồng thuận tại: d:\Project\X-rayDataset\Data_2\consensus_test_vlm.csv
+
+================================================================================
+BẢNG TỔNG HỢP BỘ DỮ LIỆU ĐỒNG THUẬN ĐA TẦNG (MULTIMODAL CONSENSUS SUMMARY)
+================================================================================
+Tập Dữ Liệu  Số Ca Ban Đầu  Số Ca Đồng Thuận Tỷ Lệ Giữ Lại (%)
+      TRAIN          12462              9630             77.3%
+        VAL           1770               954             53.9%
+       TEST           3559              1788             50.2%
+
+[PHÂN PHỐI SỐ LƯỢNG CA DƯƠNG TÍNH THEO BỆNH LÝ TRONG BỘ ĐỒNG THUẬN ĐA TẦNG]
+
+--- TRAIN (Tổng 9,630 ca) ---
+  + CARDIOMEGALY             : 349 ca
+  + DEGENERATION             : 927 ca
+  + FRACTURE                 : 1,448 ca
+  + OTHER                    : 129 ca
+  + PLEURAL_EFFUSION         : 28 ca
+  + PNEUMONIA/INFILTRATION   : 138 ca
+  + SPINAL_ALIGNMENT         : 42 ca
+  + TUBERCULOSIS             : 9 ca
+
+--- VAL (Tổng 954 ca) ---
+  + CARDIOMEGALY             : 0 ca
+  + DEGENERATION             : 1 ca
+  + FRACTURE                 : 0 ca
+  + OTHER                    : 6 ca
+  + PLEURAL_EFFUSION         : 0 ca
+  + PNEUMONIA/INFILTRATION   : 0 ca
+  + SPINAL_ALIGNMENT         : 1 ca
+  + TUBERCULOSIS             : 0 ca
+
+--- TEST (Tổng 1,788 ca) ---
+  + CARDIOMEGALY             : 0 ca
+  + DEGENERATION             : 4 ca
+  + FRACTURE                 : 3 ca
+  + OTHER                    : 1 ca
+  + PLEURAL_EFFUSION         : 0 ca
+  + PNEUMONIA/INFILTRATION   : 0 ca
+  + SPINAL_ALIGNMENT         : 4 ca
+  + TUBERCULOSIS             : 0 ca
+================================================================================

@@ -1,0 +1,17 @@
+===========================================================================
+>>> GIAI ĐOẠN 4 (PIPELINE 2): ĐỐI CHIẾU 3 BÊN & BÁO CÁO CHẨN ĐOÁN VLM
+===========================================================================
+-> Đã lưu bảng chỉ số đối chiếu 3 bên tại: d:\Project\X-rayDataset\Data_2\vlm_triangulation_metrics.csv
+          Nhãn Bệnh lý  VLM (Ảnh)  Bác sĩ (Text)  Nhãn Cũ  Kappa (VLM vs Bác sĩ)  VLM Precision  VLM Recall  VLM F1                                      Đánh Giá Năng Lực Thị Giác
+          CARDIOMEGALY          0            164      162                  0.000          0.000       0.000   0.000 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+          DEGENERATION        365            615      285                  0.529          0.792       0.470   0.590      🟡 Nhận diện khá / Tổn thương cần thêm góc nghiêng
+              FRACTURE         21            475      441                  0.009          0.238       0.011   0.020 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+                NORMAL       3089           2180     1913                  0.206          0.662       0.938   0.776         🟢 Nhận diện thị giác xuất sắc / Độ tin cậy cao
+                 OTHER        135             30      493                 -0.002          0.007       0.033   0.012 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+      PLEURAL_EFFUSION          0             21       28                  0.000          0.000       0.000   0.000 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+PNEUMONIA/INFILTRATION          0            104      145                  0.000          0.000       0.000   0.000 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+      SPINAL_ALIGNMENT        372             34       49                  0.042          0.032       0.353   0.059 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+          TUBERCULOSIS          0              9      202                  0.000          0.000       0.000   0.000 🔴 Khó phát hiện trên ảnh đơn thuần (Cần xét nghiệm/Lâm sàng)
+
+-> Đã xuất báo cáo chẩn đoán Markdown tại: d:\Project\X-rayDataset\Data_2\vlm_model_diagnostics_report.md
+===========================================================================

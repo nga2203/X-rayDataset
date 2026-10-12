@@ -2,3 +2,4 @@ Agents/
 .vscode/
 
 *.pth
+__pycache__/

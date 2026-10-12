@@ -1,0 +1,32 @@
+===========================================================================
+>>> GIAI ĐOẠN 3: KHAI THÁC THỐNG KÊ THỊ GIÁC (SCIPY & MATPLOTLIB)
+===========================================================================
+Đã tải 3,559 ca từ audited_vlm_test.csv
+
+[1/2] Tính toán Ma trận Đồng xuất hiện & Cramér's V từ Nhãn Thị giác VLM...
+-> Đã lưu ma trận Cramér's V VLM tại: d:\Project\X-rayDataset\Data_2\cramers_v_matrix_vlm.csv
+
+[TOP 5 CẶP BỆNH ĐỒNG XUẤT HIỆN MẠNH NHẤT THEO NHẬN DIỆN CỦA VLM]
+      Bệnh 1           Bệnh 2  Cramér's V  p-value Đồng xuất hiện mạnh?
+DEGENERATION SPINAL_ALIGNMENT       0.986      0.0        CÓ (V > 0.25)
+      NORMAL SPINAL_ALIGNMENT       0.876      0.0        CÓ (V > 0.25)
+DEGENERATION           NORMAL       0.867      0.0        CÓ (V > 0.25)
+      NORMAL            OTHER       0.509      0.0        CÓ (V > 0.25)
+    FRACTURE            OTHER       0.273      0.0        CÓ (V > 0.25)
+
+[2/2] Phân tích Hiệu năng nhận diện của VLM theo Nhóm tuổi...
+-> Đã lưu kết quả phân tích nhóm tuổi tại: d:\Project\X-rayDataset\Data_2\age_subgroup_f1_recall_vlm.csv
+
+[BẢNG SO SÁNH F1-SCORE CỦA VLM THEO 3 NHÓM TUỔI]
+Nhóm Tuổi               18-30 (Trẻ)  31-50 (Trung niên)  50+ (Cao tuổi)
+Nhãn Bệnh lý
+CARDIOMEGALY                  0.000               0.000           0.000
+DEGENERATION                  0.258               0.678           0.580
+FRACTURE                      0.042               0.014           0.000
+NORMAL                        0.844               0.823           0.680
+OTHER                         0.000               0.000           0.023
+PLEURAL_EFFUSION              0.000               0.000           0.000
+PNEUMONIA/INFILTRATION        0.000               0.000           0.000
+SPINAL_ALIGNMENT              0.083               0.000           0.090
+TUBERCULOSIS                  0.000               0.000           0.000
+===========================================================================
