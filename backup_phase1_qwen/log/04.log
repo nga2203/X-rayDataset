@@ -1,0 +1,23 @@
+===========================================================================
+>>> GIAI ĐOẠN 4: ĐỐI CHIẾU & CHẨN BỆNH TỔNG HỢP CHO MODEL VN-MultiXR
+===========================================================================
+          Nhãn Bệnh lý  Model F1  Model Precision  Model Recall  Kappa (Nhãn Cũ vs Chuẩn)                      
+                                              Chẩn Đoán Gốc Rễ
+          CARDIOMEGALY     0.473            0.649         0.372                     0.994                      
+         🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù
+          DEGENERATION     0.737            0.926         0.611                     0.580                      
+                                     🟢 Hiệu năng tốt / Ổn định
+              FRACTURE     0.813            0.831         0.796                     0.927                      
+                                     🟢 Hiệu năng tốt / Ổn định
+                NORMAL     0.791            0.861         0.731                     0.817                      
+                                     🟢 Hiệu năng tốt / Ổn định
+                 OTHER     0.041            0.021         0.767                     0.077 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch)
+      PLEURAL_EFFUSION     0.151            0.094         0.381                     0.527 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch)
+PNEUMONIA/INFILTRATION     0.425            0.297         0.750                     0.730                      
+         🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù
+      SPINAL_ALIGNMENT     0.107            0.062         0.382                     0.793                      
+         🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù
+          TUBERCULOSIS     0.000            0.000         0.000                     0.081 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch)
+
+-> Đã lưu báo cáo chẩn đoán chuyên sâu tại: d:\Project\X-rayDataset\Data\model_diagnostics_report.md
+===========================================================================

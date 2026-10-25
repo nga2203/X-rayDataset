@@ -1,0 +1,32 @@
+===========================================================================
+>>> GIAI ĐOẠN 3: KHAI THÁC THỐNG KÊ (SCIPY & MATPLOTLIB)
+===========================================================================
+Đã tải 3523 ca từ audited_pipeline_test.csv
+
+[1/2] Tính toán Ma trận Đồng xuất hiện & Cramér's V giữa 9 bệnh...
+-> Đã lưu ma trận Cramér's V tại: d:\Project\X-rayDataset\Data\cramers_v_matrix.csv
+
+[TOP 5 CẶP BỆNH ĐỒNG XUẤT HIỆN MẠNH NHẤT TRONG DỮ LIỆU]
+          Bệnh 1                 Bệnh 2  Cramér's V  p-value Đồng xuất hiện mạnh?
+    DEGENERATION                 NORMAL       0.586      0.0        CÓ (V > 0.25)
+        FRACTURE                 NORMAL       0.503      0.0        CÓ (V > 0.25)
+    CARDIOMEGALY                 NORMAL       0.282      0.0        CÓ (V > 0.25)
+          NORMAL PNEUMONIA/INFILTRATION       0.188      0.0          Bình thường
+PLEURAL_EFFUSION           TUBERCULOSIS       0.142      0.0          Bình thường
+
+[2/2] Phân tích Hiệu năng model VN-MultiXR theo Nhóm tuổi...
+-> Đã lưu kết quả phân tích nhóm tuổi tại: d:\Project\X-rayDataset\Data\age_subgroup_f1_recall.csv
+
+[BẢNG SO SÁNH F1-SCORE CỦA VN-MultiXR THEO 3 NHÓM TUỔI]
+Nhóm Tuổi               18-30 (Trẻ)  31-50 (Trung niên)  50+ (Cao tuổi)
+Nhãn Bệnh lý
+CARDIOMEGALY                  0.000               0.375           0.483
+DEGENERATION                  0.229               0.745           0.759
+FRACTURE                      0.858               0.787           0.785
+NORMAL                        0.822               0.803           0.747
+OTHER                         0.034               0.022           0.060
+PLEURAL_EFFUSION              0.000               0.154           0.156
+PNEUMONIA/INFILTRATION        0.182               0.533           0.418
+SPINAL_ALIGNMENT              0.133               0.078           0.113
+TUBERCULOSIS                  0.000               0.000           0.000
+===========================================================================

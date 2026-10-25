@@ -6,15 +6,15 @@ Báo cáo này phân tách nguyên nhân các sai số của mô hình **VN-Mult
 
 | Nhãn Bệnh lý           |   Model F1 |   Model Precision |   Model Recall |   Kappa (Nhãn Cũ vs Chuẩn) | Chẩn Đoán Gốc Rễ                                                                     |
 |:-----------------------|-----------:|------------------:|---------------:|---------------------------:|:-------------------------------------------------------------------------------------|
-| CARDIOMEGALY           |      0.473 |             0.649 |          0.372 |                      0.994 | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
-| DEGENERATION           |      0.737 |             0.926 |          0.611 |                      0.58  | 🟢 Hiệu năng tốt / Ổn định                                                           |
-| FRACTURE               |      0.813 |             0.831 |          0.796 |                      0.927 | 🟢 Hiệu năng tốt / Ổn định                                                           |
-| NORMAL                 |      0.791 |             0.861 |          0.731 |                      0.817 | 🟢 Hiệu năng tốt / Ổn định                                                           |
-| OTHER                  |      0.041 |             0.021 |          0.767 |                      0.077 | 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch) |
-| PLEURAL_EFFUSION       |      0.151 |             0.094 |          0.381 |                      0.527 | 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch) |
-| PNEUMONIA/INFILTRATION |      0.425 |             0.297 |          0.75  |                      0.73  | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
-| SPINAL_ALIGNMENT       |      0.107 |             0.062 |          0.382 |                      0.793 | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
-| TUBERCULOSIS           |      0     |             0     |          0     |                      0.081 | 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch) |
+| CARDIOMEGALY           |      0.461 |             0.691 |          0.346 |                      0.922 | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
+| DEGENERATION           |      0.812 |             0.921 |          0.726 |                      0.679 | 🟢 Hiệu năng tốt / Ổn định                                                           |
+| FRACTURE               |      0.794 |             0.824 |          0.767 |                      0.918 | 🟢 Hiệu năng tốt / Ổn định                                                           |
+| NORMAL                 |      0.772 |             0.775 |          0.768 |                      0.85  | 🟢 Hiệu năng tốt / Ổn định                                                           |
+| OTHER                  |      0.227 |             0.18  |          0.306 |                      0.205 | 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch) |
+| PLEURAL_EFFUSION       |      0.37  |             0.294 |          0.5   |                      0.715 | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
+| PNEUMONIA/INFILTRATION |      0.552 |             0.471 |          0.667 |                      0.813 | 🟢 Hiệu năng tốt / Ổn định                                                           |
+| SPINAL_ALIGNMENT       |      0.162 |             0.1   |          0.412 |                      0.858 | 🟡 Lỗi do Kiến trúc / Thiếu ảnh hưởng hình ảnh đặc thù                               |
+| TUBERCULOSIS           |      0     |             0     |          0     |                      0.106 | 🔴 Lỗi do Nhiễu Nhãn Cũ (Label Noise Bias - Nhãn cũ gán sai/thừa làm model học lệch) |
 
 ## 2. Phân Tích Chuyên Sâu Theo Từng Trường Hợp
 

@@ -6,13 +6,17 @@ LABELS_9 = [
     "CARDIOMEGALY",
     "DEGENERATION",
     "FRACTURE",
-    # "NORMAL",
+    "NORMAL",
     "OTHER",
     "PLEURAL_EFFUSION",
     "PNEUMONIA/INFILTRATION",
     "SPINAL_ALIGNMENT",
     "TUBERCULOSIS"
 ]
+
+# Cấu hình mô hình LLM Ollama
+LLM_MODEL = "gemma3:12b"
+OLLAMA_ENDPOINT = "http://localhost:11434/api/generate"
 
 LABEL2ID = {lbl: i for i, lbl in enumerate(LABELS_9)}
 ID2LABEL = {i: lbl for i, lbl in enumerate(LABELS_9)}
